@@ -27,15 +27,29 @@ Steps to create the scenario
 
         $ aws eks --region us-east-1 update-kubeconfig --name my-eks-cluster
 
-3. Use Helm to deploy backbase-jenkins docker image
+3. Install Helm chart
+
+        $ curl https://raw.githubusercontent.com/kubernetes/helm/master/scripts/get > get_helm.sh
+        $ chmod 700 get_helm.sh 
+        $ ./get_helm.sh 
+        $ vim rbac_helm.yaml
+        $ kubectl apply -f rbac_helm.yaml 
+        $ helm init --service-account tiller
+
+   To verify helm installation 
+
+        $ kubectl --namespace kube-system get pods
+        $ helm search mongodb
+
+4. Use Helm to deploy backbase-jenkins docker image
 
         $ helm install --name=backbase-jenkins helm/backbase-jenkins/
-4. Check helm releases
+5. Check helm releases
 
         $ helm list
-5. Get Loadbalancer public IP address for jenkins
+6. Get Loadbalancer public IP address for jenkins
 
         $ kubectl get service backbase-jenkins
-6. Access Jenkins on browser using the public IP address on port 8085 Example: http://35.202.238.35:8085
+7. Access Jenkins on browser using the public IP address on port 8085 Example: http://35.202.238.35:8085
 
-7. On Jenkins WEB check the status of a Job called 'backbase'. Pipeline must have run successfully.
+8. On Jenkins WEB check the status of a Job called 'backbase'. Pipeline must have run successfully.
