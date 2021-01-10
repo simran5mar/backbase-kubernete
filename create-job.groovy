@@ -9,7 +9,7 @@ import org.jenkinsci.plugins.workflow.multibranch.*
 String git = "https://github.com/simran5mar/backbase-sample.git"
  
 // Define Jenkins JOB name
-String job = "backbase"
+String job = "backbase-app"
  
 // Create pipeline job
 Jenkins jenkins = Jenkins.get()
