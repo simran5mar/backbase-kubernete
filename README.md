@@ -29,13 +29,13 @@ Steps to create the scenario
 
 3. Use Helm to deploy backbase-jenkins docker image
 
-$ helm install --name=backbase-jenkins helm/backbase-jenkins/
+        $ helm install --name=backbase-jenkins helm/backbase-jenkins/
 4. Check helm releases
 
-$ helm list
+        $ helm list
 5. Get Loadbalancer public IP address for jenkins
 
-$ kubectl get service backbase-jenkins
+        $ kubectl get service backbase-jenkins
 6. Access Jenkins on browser using the public IP address on port 8085 Example: http://35.202.238.35:8085
 
 7. On Jenkins WEB check the status of a Job called 'backbase'. Pipeline must have run successfully.
