@@ -6,7 +6,7 @@ import jenkins.plugins.git.*
 import org.jenkinsci.plugins.workflow.multibranch.*
  
 // Define GIT repo 
-String git = "https://github.com/hygosr/backbase-java-sample.git"
+String git = "https://github.com/simran5mar/backbase-sample.git"
  
 // Define Jenkins JOB name
 String job = "backbase"
