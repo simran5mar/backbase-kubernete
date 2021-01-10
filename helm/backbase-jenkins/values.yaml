@@ -3,7 +3,7 @@ app:
   replicas: 1
 
 image:
-  repository: hygosr/backbase-jenkins 
+  repository: simran5mar/backbase-jenkins 
   tag: 1.0.0
   pullPolicy: Always
 
