@@ -4,7 +4,7 @@ app:
 
 image:
   repository: simran5mar/backbase-jenkins 
-  tag: 1.0.0
+  tag: latest
   pullPolicy: Always
 
 service:
