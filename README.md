@@ -53,6 +53,6 @@ Steps to create the scenario
 6. Get Loadbalancer public IP address for jenkins
 
         $ kubectl get service backbase-jenkins
-7. Access Jenkins on browser using the public IP address on port 8085 Example: http://35.202.238.35:8085
+7. Access Jenkins on browser using the public IP address on port 8085 Example: http://<dns_name>:8085
 
 8. On Jenkins WEB check the status of a Job called 'backbase'. Pipeline must have run successfully.
