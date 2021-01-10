@@ -9,8 +9,9 @@ Requirements
 For this solution to run its required to have:
 
 1. Kubernetes cluster running. (covered in step 1 and Step 2)
-2. helm installed (covered in step 3).
-3. kubectl configured to access kubernetes cluster.
+2. Terraform installed.
+3. helm installed (covered in step 3).
+4. kubectl configured to access kubernetes cluster.
 
 Steps to create the scenario
 1. Clone this REPO
