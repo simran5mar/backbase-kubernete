@@ -15,10 +15,17 @@ For this solution to run its required to have:
 Steps to create the scenario
 1. Clone this REPO
 
-        $ git clone https://github.com/simran5mar/backbase-kubernetes.git
+        $ git clone https://github.com/simran5mar/backbase-kubernete.git
 
-2. Use below commands to create a EKS on AWS
+2. Use below commands to create a EKS on AWS, install awscli and configure the credentials before running commands.
 
+        $ cd backbase-kubernete
+        $ brew install awscli
+
+   Place your progmatic keys for your aws account.
+   
+        $ aws configure
+        
         $ terraform init
         $ terraform plan
         $ terraform apply
