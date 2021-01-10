@@ -20,8 +20,11 @@ $ git clone https://github.com/simran5mar/backbase-kubernetes.git
 2. Use below commands to create a EKS on AWS
 
 $ terraform init
+
 $ terraform plan
+
 $ terraform apply
+
 $ aws eks --region us-east-1 update-kubeconfig --name my-eks-cluster
 
 3. Use Helm to deploy backbase-jenkins docker image
