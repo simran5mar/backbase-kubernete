@@ -1,4 +1,4 @@
-# backbase_kubernete
+# backbase-kubernete
 Description
 1. The terraform scripts deploys the EKS to AWS.
 2. This helm chart deploy a backbase-jenkins docker image to a kubernetes cluster, exposing the port 8080 as required.
@@ -28,8 +28,7 @@ Steps to create the scenario
 
         $ curl https://raw.githubusercontent.com/kubernetes/helm/master/scripts/get > get_helm.sh
         $ chmod 700 get_helm.sh 
-        $ ./get_helm.sh 
-        $ vim rbac_helm.yaml
+        $ ./get_helm.sh
         $ kubectl apply -f rbac_helm.yaml 
         $ helm init --service-account tiller
 
