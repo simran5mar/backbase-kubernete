@@ -15,17 +15,17 @@ For this solution to run its required to have:
 Steps to create the scenario
 1. Clone this REPO
 
-  $ git clone https://github.com/simran5mar/backbase-kubernetes.git
+        $ git clone https://github.com/simran5mar/backbase-kubernetes.git
 
 2. Use below commands to create a EKS on AWS
 
-  $ terraform init
+        $ terraform init
 
-  $ terraform plan
+        $ terraform plan
 
-  $ terraform apply
+        $ terraform apply
 
-  $ aws eks --region us-east-1 update-kubeconfig --name my-eks-cluster
+        $ aws eks --region us-east-1 update-kubeconfig --name my-eks-cluster
 
 3. Use Helm to deploy backbase-jenkins docker image
 
