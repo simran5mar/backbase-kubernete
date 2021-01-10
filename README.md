@@ -8,9 +8,9 @@ An specific Public Docker image was created for this task and it's hosted on doc
 Requirements
 For this solution to run its required to have:
 
-1. Kubernetes cluster running.
-2. helm installed.
-3. kubectl configured to access kubernetes cluster;
+1. Kubernetes cluster running. (covered in step 1 and Step 2)
+2. helm installed (covered in step 3).
+3. kubectl configured to access kubernetes cluster.
 
 Steps to create the scenario
 1. Clone this REPO
